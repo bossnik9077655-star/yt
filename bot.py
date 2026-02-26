@@ -13,8 +13,9 @@ def home():
     return "Bot is Running Live 24/7!"
 
 def run_web():
+    # Render के लिए host हमेशा 0.0.0.0 होना चाहिए
     port = int(os.environ.get("PORT", 8080))
-    web_app.run(host="0.0.0.1", port=port)
+    web_app.run(host="0.0.0.0", port=port) 
 
 # --- टेलीग्राम बॉट सेटअप ---
 API_ID = 34793313
