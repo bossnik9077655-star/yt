@@ -166,7 +166,7 @@ async def photo_handler(client, message):
             chat_id=message.chat.id, 
             video=v_path, 
             thumb=t_path, 
-            caption="🎉 **कार्य पूर्ण!** यहाँ आपका वीडियो है।\n\n🤖 @ThumbnailBot",
+            caption="🎉 **कार्य पूर्ण!** यहाँ आपका वीडियो है।\n\n👉MADE BY SIR @Nikboss90\n\n💥DM For any 👀problem/to make any bot 👆👆",
             progress=progress_bar, progress_args=(msg, "वीडियो अपलोड हो रहा है...", prev_time)
         )
         await msg.delete()
